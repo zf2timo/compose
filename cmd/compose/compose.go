@@ -301,6 +301,7 @@ func RootCommand(backend api.Service) *cobra.Command {
 		portCommand(&opts, backend),
 		imagesCommand(&opts, backend),
 		versionCommand(),
+		selfUpdateCommand(),
 		buildCommand(&opts, backend),
 		pushCommand(&opts, backend),
 		pullCommand(&opts, backend),
